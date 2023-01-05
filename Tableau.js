@@ -15,3 +15,9 @@ var d =[a,b,c];
 console.log(d);
 
 console.log(d[0][2]);
+let Number = [1,2,3,4,5,6,7,8,9,10];
+Number.forEach(x => {
+    console.log('the elment is : ' +x);
+    
+});
+console.log(Number.length);

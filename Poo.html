@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO</title>
+    <script>
+
+        //let personne = {
+        //nom: "Durand",
+        //prenom: "Robert",
+
+        //afficheNom: function () {
+        //console.log('nom : ' + this.nom);
+
+        //  }
+        //};
+        //personne.afficheNom();
+
+        // var Personne = function (p_nom, p_prenom) {
+        //this.nom = p_nom;
+        //this.prenom = p_prenom;
+        // this.afficheNom = function () {
+        // console.log('Prenom : ' + this.prenom);
+        // }
+        // };
+
+        //var p = new Personne("DURAND", "Robert");
+        // p.afficheNom();
+        var Personne = function (p_nom, p_prenom) {
+            this.nom = p_nom;
+            this.prenom = p_prenom;
+        }
+        let person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        };
+        //Adding New Properties
+        person.nationality = "English";
+
+        console.log(person.firstName + " is " + person.nationality + ".");
+
+        //Deleting Properties
+        //delete person["age"];
+        delete person.age;
+        console.log(person.firstName + " is " + person.age + " years old ");
+
+
+
+
+        let txt = "";
+        for (let x in person) {
+            txt += person[x] + " ";
+
+        }
+        console.log(txt);
+
+
+
+
+
+        console.log(person["firstName"] + " is " + person["age"] + " years old.");
+
+
+
+        const perso = {};
+        person.firstName = "John";
+        person.lastName = "Doe";
+        person.age = 50;
+        person.eyeColor = "blue";
+
+
+
+
+
+        const x = person;
+        x.age = 10;
+
+        console.log(person.firstName + " " + person.lastName);
+        console.log(person.firstName + " is " + person.age + " years old.");
+
+
+        var nom_personne = "Durand"
+        var prenom_personne = "Robert"
+        var personne = new Personne(nom_personne, prenom_personne);
+        console.log(personne.nom);
+
+        console.log(personne instanceof Personne ? "oui" : "non");
+
+        //Values in an object can be another object:
+        const myObj = {
+            name: "John",
+            age: 30,
+            cars: {
+                car1: "Ford",
+                car2: "BMW",
+                car3: "Fiat"
+            }
+        }
+        //myObj.cars["car2"];
+        //myObj["cars"]["car2"];
+        //let p1 = "cars";
+        //let p2 = "car2";
+        // myObj[p1][p2];
+        console.log(myObj.cars.car2);
+
+        //Nested Arrays and Objects
+//Values in objects can be arrays, and values in arrays can be objects:
+
+
+
+
+
+       // personne.direBonjour();
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
